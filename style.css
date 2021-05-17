@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.result {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ddd;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 100px auto 20px;
+  background-color: #3344dd;
+  border: solid 10px #1d2992;
+  box-shadow: inset 0 0 5px 1px;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.container .box {
+  position: absolute;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 0 5px 1px, inset 0 0 6px 2px;
+  border-radius: 5px;
+  line-height: 80px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+.container .box::selection {
+  background-color: transparent;
+}
+
+.container .box:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.cant-move {
+  background-color: darkred !important;
+}
+
+.final {
+  pointer-events: none;
+}
+
+.in-post {
+  background-color: #3344dd !important;
+  box-shadow: 0 0 5px 1px #00000055, inset 0 0 6px 2px #1d2992 !important;
+  color: white;
+}
+button {
+  display: none;
+  padding: 10px 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 15px;
+  background-color: #3344dd;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 5px 1px grey;
+}
